@@ -1,0 +1,54 @@
+<div class="jsAccordion">
+  <div>
+    <div class="jsAccordionOpener">opener 1</div>
+    <div class="content">
+      content
+    </div>
+  </div>
+  <div>
+    <div class="jsAccordionOpener">opener 1</div>
+    <div class="content">
+      content
+    </div>
+  </div>
+  <div>
+    <div class="jsAccordionOpener">opener 1</div>
+    <div class="content">
+      content
+    </div>
+  </div>
+</div>
+<hr>
+<div class="jsAccordion">
+  <div>
+    <div class="jsAccordionOpener">opener 1</div>
+    <div class="content">
+      content
+    </div>
+  </div>
+  <div>
+    <div class="jsAccordionOpener">opener 1</div>
+    <div class="content">
+      content
+    </div>
+  </div>
+  <div>
+    <div class="jsAccordionOpener">opener 1</div>
+    <div class="content">
+      content
+    </div>
+  </div>
+</div>
+
+<script src="./index.js"></script>
+<script>
+  var accordion = new Accordion({
+    accordionContainer: ".aa", // html element
+    accordionOpener: ".jsAccordionOpener", // html element
+    accordionActiveClass: "jsAccordionActive",
+    openOnClickOrHover: "click", // click or hover
+    closeOthers: true,
+    contentHeight: 'auto', // 'auto' or 'content' or 'num'
+    sortable: false, // true or false
+  })
+</script>

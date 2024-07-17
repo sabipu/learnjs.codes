@@ -5,7 +5,7 @@ import { useDebounce } from "../utils/useDebounce";
 
 
 const EditorPane = () => {
-  const [htmlValue, setHtmlValue] = useState("<div class='bg__image'><img src='https://picsum.photos/200/300' /></div><div class='bg__image'><img src='https://picsum.photos/200/300' /></div>");
+  const [htmlValue, setHtmlValue] = useState("<div class='bg__image'><img src='' /></div><div class='bg__image'><img src='' /></div>");
   const [jsValue, setJsValue] = useState("");
   const [cssValue, setCssValue] = useState("");
   const [outputValue, setOutputValue] = useState("");
@@ -30,7 +30,7 @@ const EditorPane = () => {
   }, [debouncedHtml, debouncedCss, debouncedJs]);
 
   return (
-    <main className="md:px-64 flex flex-col flex-1 h-full">
+    <main className="md:pl-64 md:pr-96 flex flex-col flex-1 h-full">
       <div className="relative h-full">
         <SplitPane split="vertical" minSize={"35%"}>
           <JavascriptEditor value={jsValue} onChange={setJsValue} />
